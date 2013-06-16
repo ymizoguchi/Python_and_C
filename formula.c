@@ -1,6 +1,7 @@
 /*
 formula.c 2013.06.13 Y.Mizoguchi
 */
+#include <stdio.h>
 
 float s0(float a, float b, float c, float d, float e, float f)
 {

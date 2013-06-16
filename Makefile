@@ -13,6 +13,7 @@ formulaWrapper.o: formulaWrapper.c
 formulamodule.so: formula.o formulaWrapper.o
 	gcc $(LDFLAGS) -shared formula.o formulaWrapper.o -o formulamodule.so $(LIBS)
 formulatest: formulamodule.so formulatest.py
+	rm -f formula.so
 	python2.6 formulatest.py
 
 pythonformula: formula.so pythonformula.py
